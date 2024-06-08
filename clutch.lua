@@ -1,5 +1,10 @@
 if game.GameId ~= 2440500124 then return end -- Universe ID
 
+if identifyexecutor and identifyexecutor():gsub(" ", "") == "Solara" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Scripts/main/clutch-solara.lua"))()
+    return
+end
+
 local cloneref = cloneref or function(o) return o end
 local function GetService(name)
     return cloneref(game:GetService(name))
@@ -3132,7 +3137,7 @@ end))
 
 Midnight:AddConnection(RunService.RenderStepped:Connect(function(deltaTime)
     if mainGame then
-        if Flags["NoCamBob"] then
+        if Flags["NoCamBob"].Value then
             mainGame.bobspring.Position = Vector3.new()
             mainGame.spring.Position = Vector3.new()
         end

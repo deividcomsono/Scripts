@@ -210,7 +210,8 @@ function distanceFromCharacter(position)
 end
 
 local function inCutscene(): boolean
-    return false
+    local dist = (camera.CFrame.Position - character.Head.Position).Magnitude
+    return (dist > 1)
 end
 
 function isEntitySpawned(): boolean

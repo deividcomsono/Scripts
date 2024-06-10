@@ -653,7 +653,7 @@ end
 
 function addRoomConnection(room)
     room.DescendantAdded:Connect(function(child)
-        if child:IsA("BasePart") and (child.Parent and child.Parent.Name == "TriggerEventCollision" or child.Name == "Collision") then
+	if child:IsA("BasePart") and (child.Parent and child.Parent.Name == "TriggerEventCollision" and child.Name == "Collision") then
             if #Players:GetPlayers() > 1 and Flags["FEAntiSeek"].Value and rootPart then
                 local currentRoom = latestRoom.Value + 1
 

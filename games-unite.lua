@@ -2,7 +2,7 @@
 Features:
 - Anti Aim
 - Auto Shoot (Wallbang)
-- No Recoild & No Spread
+- No Recoil & No Spread
 - ESP
 
 Known bugs:
@@ -12,7 +12,7 @@ Known bugs:
 ]]
 
 
--- Change 'false' to 'true' if you want to enable the feature.
+-- Change 'false' to 'true' to enable the feature.
 getgenv().debug_mode = false
 getgenv().auto_shoot = false
 getgenv().anti_aim = false

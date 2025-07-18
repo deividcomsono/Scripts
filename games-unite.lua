@@ -5,6 +5,9 @@ Features:
 - No Recoild & No Spread
 - ESP
 
+Known bugs:
+- Knockback weapons have bad auto shoot.
+
 - Made by deividcomsono
 ]]
 

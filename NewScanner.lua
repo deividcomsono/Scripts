@@ -1,6 +1,8 @@
 -- Code by LSPLASH :scream:
 -- Use _G.OnShop = false if you are using Delta
 
+local FPS = _G.FPS or 0.033444816053511704
+
 if _G.OnShop then
     local CustomShop = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Shop%20Items/Source.lua"))()
 	
@@ -180,7 +182,7 @@ function equip(p3)
 		if u8 == false then
 			break;
 		end;
-		task.wait(0.033444816053511704);	
+		task.wait(FPS);	
 	end;
 end;
 local u11 = tick();
